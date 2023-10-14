@@ -1,10 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, View } from "react-native";
+import { ListItem } from "./components/ListItem";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <ListItem
+        imageUrl={"https://picsum.photos/id/10/300/300"}
+        title="title"
+        author="author"
+      />
+      <ListItem
+        imageUrl={"https://picsum.photos/id/10/300/300"}
+        title="title"
+        author="author"
+      />
+      <ListItem
+        imageUrl={"https://picsum.photos/id/10/300/300"}
+        title="title"
+        author="author"
+      />
+
+      <ListItem
+        imageUrl={"https://picsum.photos/id/10/300/300"}
+        title="title"
+        author="Japan News"
+      />
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +34,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#eee",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
