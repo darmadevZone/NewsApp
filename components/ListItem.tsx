@@ -19,10 +19,12 @@ export const ListItem = (props: Props) => {
   return (
     <View style={styles.itemContainer}>
       <View style={styles.leftContainer}>
-        <Image style={{ width: 100, height: 100 }} source={{ uri: props.imageUrl }} />
+        <Image
+          style={{ width: 100, height: 100 }}
+          source={{ uri: props.imageUrl }}
+        />
       </View>
       <View style={styles.rightContainer}>
-        <Text>Hello,World</Text>
         <Text>{props.title}</Text>
         <Text>提供元:{props.author}</Text>
       </View>
@@ -37,6 +39,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     flexDirection: "row",
     gap: 10,
+    margin: 2,
   },
   leftContainer: {
     width: 100,
